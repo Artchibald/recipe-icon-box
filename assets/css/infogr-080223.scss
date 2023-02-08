@@ -1,0 +1,94 @@
+$light-blue: #2393d1;
+$dark-blue: #1a2352;
+#infogr-wrap-080223-desktop {
+    margin: 80px auto 100px auto;
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 990px;
+    height: 100%;
+    min-height: 440px;
+    border: 2px solid $dark-blue;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 110px;
+    padding-top: 30px;
+    @media (min-width: 940px) {
+        padding-bottom: 60px;
+    }
+    @media (min-width: 1216px) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        max-width: 1280px;
+    }
+    .thumb {
+        width: 200px;
+        height: 220px;
+        position: relative;
+        margin-top: 30px;
+        @media (min-width: 940px) {
+            margin-top: 20px;
+            width: 200px;
+            height: 240px;
+        }
+        @media (min-width: 1216px) {
+            margin-top: 0;
+        }
+        // @media (min-width: 1216px) {
+        //     top: -34px;
+        // }
+        svg {
+            display: block;
+            margin: auto;
+            &.svg1 {
+                height: 120px;
+                width: 120px;
+            }
+            &.svg2 {
+                height: 120px;
+                width: 120px;
+            }
+            &.svg3 {
+                height: 120px;
+                width: 142px;
+            }
+            &.svg4 {
+                height: 120px;
+                width: 98px;
+            }
+            &.svg5 {
+                height: 116px;
+                width: 102px;
+            }
+            &.svg6 {
+                height: 120px;
+                width: 136px;
+            }
+        }
+        h2 {
+            font-family: Helvetica, Sans-Serif;
+            font-weight: bold;
+            color: $dark-blue;
+            font-size: 17px;
+            text-align: center;
+            text-transform: uppercase;
+            max-width: 120px;
+            width: 100%;
+            display: block;
+            margin: 12px auto 0 auto;
+            @media (min-width: 1216px) {
+                margin: 42px auto 0 auto;
+            }
+        }
+    }
+    svg.incrementor {
+        height: 160px;
+        width: 160px;
+        display: block;
+        margin: 20px auto;
+        position: absolute;
+        bottom: -100px;
+    }
+}

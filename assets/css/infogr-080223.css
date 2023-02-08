@@ -1,0 +1,99 @@
+#infogr-wrap-080223-desktop {
+  margin: 80px auto 100px auto;
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 990px;
+  height: 100%;
+  min-height: 440px;
+  border: 2px solid #1a2352;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 110px;
+  padding-top: 30px;
+}
+@media (min-width: 940px) {
+  #infogr-wrap-080223-desktop {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1216px) {
+  #infogr-wrap-080223-desktop {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 1280px;
+  }
+}
+#infogr-wrap-080223-desktop .thumb {
+  width: 200px;
+  height: 220px;
+  position: relative;
+  margin-top: 30px;
+}
+@media (min-width: 940px) {
+  #infogr-wrap-080223-desktop .thumb {
+    margin-top: 20px;
+    width: 200px;
+    height: 240px;
+  }
+}
+@media (min-width: 1216px) {
+  #infogr-wrap-080223-desktop .thumb {
+    margin-top: 0;
+  }
+}
+#infogr-wrap-080223-desktop .thumb svg {
+  display: block;
+  margin: auto;
+}
+#infogr-wrap-080223-desktop .thumb svg.svg1 {
+  height: 120px;
+  width: 120px;
+}
+#infogr-wrap-080223-desktop .thumb svg.svg2 {
+  height: 120px;
+  width: 120px;
+}
+#infogr-wrap-080223-desktop .thumb svg.svg3 {
+  height: 120px;
+  width: 142px;
+}
+#infogr-wrap-080223-desktop .thumb svg.svg4 {
+  height: 120px;
+  width: 98px;
+}
+#infogr-wrap-080223-desktop .thumb svg.svg5 {
+  height: 116px;
+  width: 102px;
+}
+#infogr-wrap-080223-desktop .thumb svg.svg6 {
+  height: 120px;
+  width: 136px;
+}
+#infogr-wrap-080223-desktop .thumb h2 {
+  font-family: Helvetica, Sans-Serif;
+  font-weight: bold;
+  color: #1a2352;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 120px;
+  width: 100%;
+  display: block;
+  margin: 12px auto 0 auto;
+}
+@media (min-width: 1216px) {
+  #infogr-wrap-080223-desktop .thumb h2 {
+    margin: 42px auto 0 auto;
+  }
+}
+#infogr-wrap-080223-desktop svg.incrementor {
+  height: 160px;
+  width: 160px;
+  display: block;
+  margin: 20px auto;
+  position: absolute;
+  bottom: -100px;
+}/*# sourceMappingURL=infogr-080223.css.map */
