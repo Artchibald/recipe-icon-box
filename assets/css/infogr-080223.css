@@ -29,7 +29,7 @@
   }
 }
 #infogr-wrap-080223 {
-  margin: 2000px auto 160px auto;
+  margin: 0 auto 160px auto;
   position: relative;
   display: flex;
   width: 100%;
@@ -347,6 +347,7 @@
   position: absolute;
   top: 40px;
   right: 40px;
+  transform: rotate(45deg);
   cursor: pointer;
 }
 #infogr-wrap-080223 #toggle060223Text1 svg:hover,
