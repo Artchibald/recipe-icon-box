@@ -29,7 +29,7 @@
   }
 }
 #infogr-wrap-080223 {
-  margin: 0 auto 160px auto;
+  margin: 0 auto 200px auto;
   position: relative;
   display: flex;
   width: 100%;
@@ -71,6 +71,7 @@
   font-weight: bold;
   color: #1a2352;
   font-size: 17px;
+  line-height: 21px;
   text-transform: uppercase;
   width: 100%;
   display: block;
@@ -85,6 +86,7 @@
   }
 }
 #infogr-wrap-080223 h2#second-title100223 {
+  line-height: 21px;
   text-align: center;
   margin: 0 auto 0 auto;
   position: absolute;
@@ -122,7 +124,7 @@
   color: #cf3b7b;
   position: relative;
   left: -16px;
-  top: 7px;
+  top: 5px;
   width: 6px;
   height: 6px;
   display: block;
