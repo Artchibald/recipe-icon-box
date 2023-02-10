@@ -1,13 +1,3 @@
-@-webkit-keyframes slideInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-20%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @keyframes slideInFromTop {
   0% {
     opacity: 0;
@@ -18,14 +8,6 @@
     transform: translateY(0);
   }
 }
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -34,8 +16,20 @@
     opacity: 1;
   }
 }
+@keyframes dash {
+  to {
+    stroke-dasharray: 414;
+    stroke-dashoffset: 122;
+  }
+}
+@keyframes dash2 {
+  to {
+    stroke-dasharray: 444;
+    stroke-dashoffset: 122;
+  }
+}
 #infogr-wrap-080223 {
-  margin: 80px auto 100px auto;
+  margin: 0px auto 160px auto;
   position: relative;
   display: flex;
   width: 100%;
@@ -48,88 +42,28 @@
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 110px;
-  padding-top: 30px;
-  -webkit-animation: 0.5s ease-out 0s 1 fadeIn;
-          animation: 0.5s ease-out 0s 1 fadeIn;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  padding-top: 0;
+  opacity: 0;
+}
+#infogr-wrap-080223.start {
+  animation: 0.5s ease-out 0s 1 fadeIn;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 @media (min-width: 940px) {
   #infogr-wrap-080223 {
+    padding-top: 30px;
+    margin: 20px auto 160px auto;
     padding-bottom: 90px;
   }
 }
-@media (min-width: 1216px) {
+@media (min-width: 1300px) {
   #infogr-wrap-080223 {
     padding-top: 0px;
     padding-bottom: 0px;
     max-width: 1280px;
   }
-}
-#infogr-wrap-080223 #toggle060223CloseButton1,
-#infogr-wrap-080223 #toggle060223CloseButton2,
-#infogr-wrap-080223 #toggle060223CloseButton3,
-#infogr-wrap-080223 #toggle060223CloseButton4,
-#infogr-wrap-080223 #toggle060223CloseButton5,
-#infogr-wrap-080223 #toggle060223CloseButton6,
-#infogr-wrap-080223 #toggle060223CloseButton7 {
-  cursor: pointer;
-  margin: auto;
-  border-radius: 50%;
-  display: block;
-  width: 25px;
-  height: 25px;
-  line-height: 21px;
-  font-size: 21px;
-  background-color: #2393d1;
-  border: 1px solid #1a2352;
-  color: white;
-  position: absolute;
-}
-#infogr-wrap-080223 #toggle060223CloseButton1:hover,
-#infogr-wrap-080223 #toggle060223CloseButton2:hover,
-#infogr-wrap-080223 #toggle060223CloseButton3:hover,
-#infogr-wrap-080223 #toggle060223CloseButton4:hover,
-#infogr-wrap-080223 #toggle060223CloseButton5:hover,
-#infogr-wrap-080223 #toggle060223CloseButton6:hover,
-#infogr-wrap-080223 #toggle060223CloseButton7:hover {
-  background-color: white;
-  color: #2393d1;
-}
-#infogr-wrap-080223 #toggle060223CloseButton1 {
-  top: 68px;
-  left: 48px;
-}
-#infogr-wrap-080223 #toggle060223CloseButton2 {
-  top: 68px;
-  left: 74px;
-}
-#infogr-wrap-080223 #toggle060223CloseButton3 {
-  top: 60px;
-  left: 78px;
-}
-#infogr-wrap-080223 #toggle060223CloseButton4 {
-  top: 64px;
-  left: 86px;
-}
-#infogr-wrap-080223 #toggle060223CloseButton5 {
-  top: 41px;
-  left: 78px;
-}
-#infogr-wrap-080223 #toggle060223CloseButton6 {
-  top: 110px;
-  left: 100px;
-}
-#infogr-wrap-080223 #toggle060223CloseButton7 {
-  margin: auto;
-  bottom: 35px;
-}
-#infogr-wrap-080223 #toggle060223Button7 {
-  background-color: #1a2352;
-  border-radius: 50%;
 }
 #infogr-wrap-080223 h2 {
   clear: both;
@@ -142,13 +76,6 @@
   display: block;
   margin: 12px auto 0 auto;
   position: relative;
-  -webkit-animation: 0.5s ease-out 0s 1 fadeIn;
-          animation: 0.5s ease-out 0s 1 fadeIn;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
   margin: 40px 0px 20px 40px;
   max-width: 60%;
 }
@@ -156,6 +83,18 @@
   #infogr-wrap-080223 h2 {
     max-width: 70%;
   }
+}
+#infogr-wrap-080223 h2#second-title {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  position: absolute;
+  bottom: -155px;
+  opacity: 0;
+}
+#infogr-wrap-080223 h2#second-title.start {
+  animation: 0.5s ease-out 0s 1 fadeIn;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
 }
 #infogr-wrap-080223 p {
   font-family: Helvetica, Sans-Serif;
@@ -213,7 +152,7 @@
   width: 50%;
   height: auto;
   position: relative;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 @media (min-width: 480px) {
   #infogr-wrap-080223 .thumb {
@@ -245,98 +184,125 @@
   scale: 1.1;
   transform: translateY(5px);
 }
-#infogr-wrap-080223 .thumb.svg1 {
+#infogr-wrap-080223 .thumb.svg1.start {
   opacity: 0;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
-          animation: 1s ease-out 0s 1 slideInFromTop;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
-#infogr-wrap-080223 .thumb.svg1 svg {
+#infogr-wrap-080223 .thumb.svg1.start svg {
   height: 120px;
   width: 120px;
 }
-#infogr-wrap-080223 .thumb.svg2 {
-  opacity: 0;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
-          animation: 1s ease-out 0s 1 slideInFromTop;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+#infogr-wrap-080223 .thumb.svg1.start svg .path {
+  stroke-dasharray: 414;
+  stroke-dashoffset: 592;
+  animation: dash 0.8s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
 }
-#infogr-wrap-080223 .thumb.svg2 svg {
+#infogr-wrap-080223 .thumb.svg2.start {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+#infogr-wrap-080223 .thumb.svg2.start svg {
   height: 120px;
   width: 120px;
 }
-#infogr-wrap-080223 .thumb.svg3 {
-  opacity: 0;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
-          animation: 1s ease-out 0s 1 slideInFromTop;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+#infogr-wrap-080223 .thumb.svg2.start svg .path {
+  stroke-dasharray: 414;
+  stroke-dashoffset: 592;
+  animation: dash 0.8s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.1s;
 }
-#infogr-wrap-080223 .thumb.svg3 svg {
+#infogr-wrap-080223 .thumb.svg3.start {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation-delay: 1.4s;
+  animation-fill-mode: forwards;
+}
+#infogr-wrap-080223 .thumb.svg3.start svg {
   height: 120px;
   width: 142px;
 }
-#infogr-wrap-080223 .thumb.svg4 {
-  opacity: 0;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
-          animation: 1s ease-out 0s 1 slideInFromTop;
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+#infogr-wrap-080223 .thumb.svg3.start svg .path {
+  stroke-dasharray: 414;
+  stroke-dashoffset: 592;
+  animation: dash 0.8s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.4s;
 }
-#infogr-wrap-080223 .thumb.svg4 svg {
+#infogr-wrap-080223 .thumb.svg4.start {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+#infogr-wrap-080223 .thumb.svg4.start svg {
   height: 120px;
   width: 98px;
 }
-#infogr-wrap-080223 .thumb.svg5 {
-  opacity: 0;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
-          animation: 1s ease-out 0s 1 slideInFromTop;
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+#infogr-wrap-080223 .thumb.svg4.start svg .path {
+  stroke-dasharray: 414;
+  stroke-dashoffset: 592;
+  animation: dash 0.8s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.7s;
 }
-#infogr-wrap-080223 .thumb.svg5 svg {
+#infogr-wrap-080223 .thumb.svg5.start {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+#infogr-wrap-080223 .thumb.svg5.start svg {
   height: 116px;
   width: 102px;
 }
-#infogr-wrap-080223 .thumb.svg6 {
-  opacity: 0;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
-          animation: 1s ease-out 0s 1 slideInFromTop;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+#infogr-wrap-080223 .thumb.svg5.start svg .path {
+  stroke-dasharray: 414;
+  stroke-dashoffset: 592;
+  animation: dash 0.8s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
-#infogr-wrap-080223 .thumb.svg6 svg {
+#infogr-wrap-080223 .thumb.svg6.start {
+  opacity: 0;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#infogr-wrap-080223 .thumb.svg6.start svg {
   height: 120px;
   width: 136px;
+}
+#infogr-wrap-080223 .thumb.svg6.start svg .path {
+  stroke-dasharray: 414;
+  stroke-dashoffset: 592;
+  animation: dash2 0.8s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2.3s;
 }
 #infogr-wrap-080223 .thumb h2 {
   font-family: Helvetica, Sans-Serif;
   font-weight: bold;
   color: #1a2352;
-  font-size: 17px;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
   display: block;
   margin: 12px auto 0 auto;
+  line-height: 16px;
 }
 @media (min-width: 1216px) {
   #infogr-wrap-080223 .thumb h2 {
     margin: 42px auto 0 auto;
+    font-size: 17px;
+    line-height: 21px;
   }
 }
 #infogr-wrap-080223 #toggle060223Text1,
@@ -392,24 +358,23 @@
 #infogr-wrap-080223 #toggle060223Text7 svg:hover {
   opacity: 0.7;
 }
-#infogr-wrap-080223 svg.incrementor {
-  height: 160px;
-  width: 160px;
+#infogr-wrap-080223 svg#toggle060223Button7 {
+  height: 174px;
+  width: 162px;
   display: block;
   margin: 20px auto;
   position: absolute;
-  bottom: -100px;
-  -webkit-animation: 0.3s ease-out 0s 1 slideInFromTop;
-          animation: 0.3s ease-out 0s 1 slideInFromTop;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  bottom: -122px;
   opacity: 0;
   z-index: 1;
   cursor: pointer;
 }
-#infogr-wrap-080223 svg.incrementor:hover {
+#infogr-wrap-080223 svg#toggle060223Button7.start {
+  animation: 0.3s ease-out 0s 1 slideInFromTop;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+#infogr-wrap-080223 svg#toggle060223Button7:hover {
   transition: all 0.2s ease-in;
-  bottom: -95px;
+  bottom: -125px;
 }/*# sourceMappingURL=infogr-080223.css.map */
