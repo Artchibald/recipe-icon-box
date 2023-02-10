@@ -161,6 +161,7 @@
     margin-top: 20px;
     width: 200px;
     height: auto;
+    min-height: 267px;
   }
 }
 @media (min-width: 940px) {
@@ -193,8 +194,14 @@
   animation-fill-mode: forwards;
 }
 #infogr-wrap-080223 .thumb100223.svg1.start svg {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
+}
+@media (min-width: 480px) {
+  #infogr-wrap-080223 .thumb100223.svg1.start svg {
+    height: 120px;
+    width: 120px;
+  }
 }
 #infogr-wrap-080223 .thumb100223.svg1.start svg .path {
   stroke-dasharray: 414;
@@ -210,8 +217,14 @@
   animation-fill-mode: forwards;
 }
 #infogr-wrap-080223 .thumb100223.svg2.start svg {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
+}
+@media (min-width: 480px) {
+  #infogr-wrap-080223 .thumb100223.svg2.start svg {
+    height: 120px;
+    width: 120px;
+  }
 }
 #infogr-wrap-080223 .thumb100223.svg2.start svg .path {
   stroke-dasharray: 414;
@@ -227,8 +240,14 @@
   animation-fill-mode: forwards;
 }
 #infogr-wrap-080223 .thumb100223.svg3.start svg {
-  height: 120px;
-  width: 142px;
+  height: 80px;
+  width: 80px;
+}
+@media (min-width: 480px) {
+  #infogr-wrap-080223 .thumb100223.svg3.start svg {
+    height: 120px;
+    width: 120px;
+  }
 }
 #infogr-wrap-080223 .thumb100223.svg3.start svg .path {
   stroke-dasharray: 414;
@@ -244,8 +263,14 @@
   animation-fill-mode: forwards;
 }
 #infogr-wrap-080223 .thumb100223.svg4.start svg {
-  height: 120px;
-  width: 98px;
+  height: 80px;
+  width: 80px;
+}
+@media (min-width: 480px) {
+  #infogr-wrap-080223 .thumb100223.svg4.start svg {
+    height: 120px;
+    width: 120px;
+  }
 }
 #infogr-wrap-080223 .thumb100223.svg4.start svg .path {
   stroke-dasharray: 414;
@@ -261,8 +286,14 @@
   animation-fill-mode: forwards;
 }
 #infogr-wrap-080223 .thumb100223.svg5.start svg {
-  height: 116px;
-  width: 102px;
+  height: 80px;
+  width: 80px;
+}
+@media (min-width: 480px) {
+  #infogr-wrap-080223 .thumb100223.svg5.start svg {
+    height: 120px;
+    width: 120px;
+  }
 }
 #infogr-wrap-080223 .thumb100223.svg5.start svg .path {
   stroke-dasharray: 414;
@@ -278,8 +309,14 @@
   animation-fill-mode: forwards;
 }
 #infogr-wrap-080223 .thumb100223.svg6.start svg {
-  height: 120px;
-  width: 136px;
+  height: 80px;
+  width: 80px;
+}
+@media (min-width: 480px) {
+  #infogr-wrap-080223 .thumb100223.svg6.start svg {
+    height: 120px;
+    width: 120px;
+  }
 }
 #infogr-wrap-080223 .thumb100223.svg6.start svg .path {
   stroke-dasharray: 414;
@@ -302,7 +339,7 @@
 }
 @media (min-width: 1216px) {
   #infogr-wrap-080223 .thumb100223 h2 {
-    margin: 42px auto 0 auto;
+    margin: 22px auto 0 auto;
     font-size: 17px;
     line-height: 21px;
   }

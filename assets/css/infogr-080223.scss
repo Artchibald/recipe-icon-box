@@ -164,6 +164,7 @@ $border-blue: #2393d1;
             margin-top: 20px;
             width: 200px;
             height: auto;
+            min-height: 267px;
         }
         @media (min-width: 940px) {
             margin-top: 20px;
@@ -194,8 +195,12 @@ $border-blue: #2393d1;
                 animation-delay: 1s;
                 animation-fill-mode: forwards;
                 svg {
-                    height: 120px;
-                    width: 120px;
+                    height: 80px;
+                    width: 80px;
+                    @media (min-width: 480px) {
+                        height: 120px;
+                        width: 120px;
+                    }
                     .path {
                         stroke-dasharray: 414;
                         stroke-dashoffset: 592;
@@ -213,8 +218,12 @@ $border-blue: #2393d1;
                 animation-delay: 1.2s;
                 animation-fill-mode: forwards;
                 svg {
-                    height: 120px;
-                    width: 120px;
+                    height: 80px;
+                    width: 80px;
+                    @media (min-width: 480px) {
+                        height: 120px;
+                        width: 120px;
+                    }
                     .path {
                         stroke-dasharray: 414;
                         stroke-dashoffset: 592;
@@ -232,8 +241,12 @@ $border-blue: #2393d1;
                 animation-delay: 1.4s;
                 animation-fill-mode: forwards;
                 svg {
-                    height: 120px;
-                    width: 142px;
+                    height: 80px;
+                    width: 80px;
+                    @media (min-width: 480px) {
+                        height: 120px;
+                        width: 120px;
+                    }
                     .path {
                         stroke-dasharray: 414;
                         stroke-dashoffset: 592;
@@ -251,8 +264,12 @@ $border-blue: #2393d1;
                 animation-delay: 1.6s;
                 animation-fill-mode: forwards;
                 svg {
-                    height: 120px;
-                    width: 98px;
+                    height: 80px;
+                    width: 80px;
+                    @media (min-width: 480px) {
+                        height: 120px;
+                        width: 120px;
+                    }
                     .path {
                         stroke-dasharray: 414;
                         stroke-dashoffset: 592;
@@ -270,8 +287,12 @@ $border-blue: #2393d1;
                 animation-delay: 1.8s;
                 animation-fill-mode: forwards;
                 svg {
-                    height: 116px;
-                    width: 102px;
+                    height: 80px;
+                    width: 80px;
+                    @media (min-width: 480px) {
+                        height: 120px;
+                        width: 120px;
+                    }
                     .path {
                         stroke-dasharray: 414;
                         stroke-dashoffset: 592;
@@ -289,8 +310,12 @@ $border-blue: #2393d1;
                 animation-delay: 2s;
                 animation-fill-mode: forwards;
                 svg {
-                    height: 120px;
-                    width: 136px;
+                    height: 80px;
+                    width: 80px;
+                    @media (min-width: 480px) {
+                        height: 120px;
+                        width: 120px;
+                    }
                     .path {
                         stroke-dasharray: 414;
                         stroke-dashoffset: 592;
@@ -313,7 +338,7 @@ $border-blue: #2393d1;
             margin: 12px auto 0 auto;
             line-height: 16px;
             @media (min-width: 1216px) {
-                margin: 42px auto 0 auto;
+                margin: 22px auto 0 auto;
                 font-size: 17px;
                 line-height: 21px;
             }
