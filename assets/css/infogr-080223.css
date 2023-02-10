@@ -29,7 +29,7 @@
   }
 }
 #infogr-wrap-080223 {
-  margin: 0px auto 160px auto;
+  margin: 2000px auto 160px auto;
   position: relative;
   display: flex;
   width: 100%;
@@ -84,14 +84,14 @@
     max-width: 70%;
   }
 }
-#infogr-wrap-080223 h2#second-title {
+#infogr-wrap-080223 h2#second-title100223 {
   text-align: center;
   margin: 0 auto 0 auto;
   position: absolute;
   bottom: -155px;
   opacity: 0;
 }
-#infogr-wrap-080223 h2#second-title.start {
+#infogr-wrap-080223 h2#second-title100223.start {
   animation: 0.5s ease-out 0s 1 fadeIn;
   animation-delay: 0.6s;
   animation-fill-mode: forwards;
@@ -148,145 +148,145 @@
   background-color: white;
   height: 325px;
 }
-#infogr-wrap-080223 .thumb {
+#infogr-wrap-080223 .thumb100223 {
   width: 50%;
   height: auto;
   position: relative;
   margin-top: 0px;
 }
 @media (min-width: 480px) {
-  #infogr-wrap-080223 .thumb {
+  #infogr-wrap-080223 .thumb100223 {
     margin-top: 20px;
     width: 200px;
     height: auto;
   }
 }
 @media (min-width: 940px) {
-  #infogr-wrap-080223 .thumb {
+  #infogr-wrap-080223 .thumb100223 {
     margin-top: 20px;
     height: auto;
   }
 }
 @media (min-width: 1216px) {
-  #infogr-wrap-080223 .thumb {
+  #infogr-wrap-080223 .thumb100223 {
     margin-top: 0;
   }
 }
-#infogr-wrap-080223 .thumb svg {
+#infogr-wrap-080223 .thumb100223 svg {
   display: block;
   margin: 20px auto 0 auto;
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
-#infogr-wrap-080223 .thumb svg:hover {
+#infogr-wrap-080223 .thumb100223 svg:hover {
   transition: all 0.2s ease-in;
   position: relative;
   scale: 1.1;
   transform: translateY(5px);
 }
-#infogr-wrap-080223 .thumb.svg1.start {
+#infogr-wrap-080223 .thumb100223.svg1.start {
   opacity: 0;
   animation: 1s ease-out 0s 1 slideInFromTop;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
-#infogr-wrap-080223 .thumb.svg1.start svg {
+#infogr-wrap-080223 .thumb100223.svg1.start svg {
   height: 120px;
   width: 120px;
 }
-#infogr-wrap-080223 .thumb.svg1.start svg .path {
+#infogr-wrap-080223 .thumb100223.svg1.start svg .path {
   stroke-dasharray: 414;
   stroke-dashoffset: 592;
   animation: dash 0.8s linear;
   animation-fill-mode: forwards;
   animation-delay: 0.8s;
 }
-#infogr-wrap-080223 .thumb.svg2.start {
+#infogr-wrap-080223 .thumb100223.svg2.start {
   opacity: 0;
   animation: 1s ease-out 0s 1 slideInFromTop;
   animation-delay: 1.2s;
   animation-fill-mode: forwards;
 }
-#infogr-wrap-080223 .thumb.svg2.start svg {
+#infogr-wrap-080223 .thumb100223.svg2.start svg {
   height: 120px;
   width: 120px;
 }
-#infogr-wrap-080223 .thumb.svg2.start svg .path {
+#infogr-wrap-080223 .thumb100223.svg2.start svg .path {
   stroke-dasharray: 414;
   stroke-dashoffset: 592;
   animation: dash 0.8s linear;
   animation-fill-mode: forwards;
   animation-delay: 1.1s;
 }
-#infogr-wrap-080223 .thumb.svg3.start {
+#infogr-wrap-080223 .thumb100223.svg3.start {
   opacity: 0;
   animation: 1s ease-out 0s 1 slideInFromTop;
   animation-delay: 1.4s;
   animation-fill-mode: forwards;
 }
-#infogr-wrap-080223 .thumb.svg3.start svg {
+#infogr-wrap-080223 .thumb100223.svg3.start svg {
   height: 120px;
   width: 142px;
 }
-#infogr-wrap-080223 .thumb.svg3.start svg .path {
+#infogr-wrap-080223 .thumb100223.svg3.start svg .path {
   stroke-dasharray: 414;
   stroke-dashoffset: 592;
   animation: dash 0.8s linear;
   animation-fill-mode: forwards;
   animation-delay: 1.4s;
 }
-#infogr-wrap-080223 .thumb.svg4.start {
+#infogr-wrap-080223 .thumb100223.svg4.start {
   opacity: 0;
   animation: 1s ease-out 0s 1 slideInFromTop;
   animation-delay: 1.6s;
   animation-fill-mode: forwards;
 }
-#infogr-wrap-080223 .thumb.svg4.start svg {
+#infogr-wrap-080223 .thumb100223.svg4.start svg {
   height: 120px;
   width: 98px;
 }
-#infogr-wrap-080223 .thumb.svg4.start svg .path {
+#infogr-wrap-080223 .thumb100223.svg4.start svg .path {
   stroke-dasharray: 414;
   stroke-dashoffset: 592;
   animation: dash 0.8s linear;
   animation-fill-mode: forwards;
   animation-delay: 1.7s;
 }
-#infogr-wrap-080223 .thumb.svg5.start {
+#infogr-wrap-080223 .thumb100223.svg5.start {
   opacity: 0;
   animation: 1s ease-out 0s 1 slideInFromTop;
   animation-delay: 1.8s;
   animation-fill-mode: forwards;
 }
-#infogr-wrap-080223 .thumb.svg5.start svg {
+#infogr-wrap-080223 .thumb100223.svg5.start svg {
   height: 116px;
   width: 102px;
 }
-#infogr-wrap-080223 .thumb.svg5.start svg .path {
+#infogr-wrap-080223 .thumb100223.svg5.start svg .path {
   stroke-dasharray: 414;
   stroke-dashoffset: 592;
   animation: dash 0.8s linear;
   animation-fill-mode: forwards;
   animation-delay: 2s;
 }
-#infogr-wrap-080223 .thumb.svg6.start {
+#infogr-wrap-080223 .thumb100223.svg6.start {
   opacity: 0;
   animation: 1s ease-out 0s 1 slideInFromTop;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
-#infogr-wrap-080223 .thumb.svg6.start svg {
+#infogr-wrap-080223 .thumb100223.svg6.start svg {
   height: 120px;
   width: 136px;
 }
-#infogr-wrap-080223 .thumb.svg6.start svg .path {
+#infogr-wrap-080223 .thumb100223.svg6.start svg .path {
   stroke-dasharray: 414;
   stroke-dashoffset: 592;
   animation: dash2 0.8s linear;
   animation-fill-mode: forwards;
   animation-delay: 2.3s;
 }
-#infogr-wrap-080223 .thumb h2 {
+#infogr-wrap-080223 .thumb100223 h2 {
   font-family: Helvetica, Sans-Serif;
   font-weight: bold;
   color: #1a2352;
@@ -299,7 +299,7 @@
   line-height: 16px;
 }
 @media (min-width: 1216px) {
-  #infogr-wrap-080223 .thumb h2 {
+  #infogr-wrap-080223 .thumb100223 h2 {
     margin: 42px auto 0 auto;
     font-size: 17px;
     line-height: 21px;
