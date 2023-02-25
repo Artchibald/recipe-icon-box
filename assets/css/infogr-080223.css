@@ -28,6 +28,26 @@
     stroke-dashoffset: 122;
   }
 }
+@keyframes drawBorder {
+  0% {
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    border-top: 0;
+  }
+  50% {
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    border-top: 0;
+  }
+  100% {
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+}
 #infogr-wrap-080223 {
   margin: 0 auto 200px auto;
   position: relative;
@@ -36,7 +56,7 @@
   max-width: 660px;
   height: 100%;
   min-height: 440px;
-  border: 2px solid #1a2352;
+  border: 2px solid transparent;
   border-radius: 18px;
   justify-content: center;
   align-items: center;
@@ -50,6 +70,18 @@
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+#infogr-wrap-080223.start:before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  border: 2px solid #1a2352;
+  animation: drawBorder 2s ease-in-out forwards;
+  animation-delay: 4s;
 }
 @media (min-width: 940px) {
   #infogr-wrap-080223 {
@@ -90,12 +122,12 @@
   text-align: center;
   margin: 0 auto 0 auto;
   position: absolute;
-  bottom: -155px;
+  bottom: -144px;
   opacity: 0;
 }
 #infogr-wrap-080223 h2#second-title100223.start {
   animation: 0.5s ease-out 0s 1 fadeIn;
-  animation-delay: 0.6s;
+  animation-delay: 3.6s;
   animation-fill-mode: forwards;
 }
 #infogr-wrap-080223 p {
@@ -404,17 +436,12 @@
   display: block;
   margin: 20px auto;
   position: absolute;
-  bottom: -122px;
+  bottom: -108px;
   opacity: 0;
   z-index: 1;
-  cursor: pointer;
 }
 #infogr-wrap-080223 svg#toggle060223Button7.start {
   animation: 0.3s ease-out 0s 1 slideInFromTop;
-  animation-delay: 0.8s;
+  animation-delay: 4s;
   animation-fill-mode: forwards;
-}
-#infogr-wrap-080223 svg#toggle060223Button7:hover {
-  transition: all 0.2s ease-in;
-  bottom: -125px;
 }/*# sourceMappingURL=infogr-080223.css.map */
