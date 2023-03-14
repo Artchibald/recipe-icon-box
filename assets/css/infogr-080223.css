@@ -28,24 +28,89 @@
     stroke-dashoffset: 122;
   }
 }
-@keyframes drawBorder {
+@keyframes drawLine1 {
   0% {
+    border: 2px dashed #1a2352;
     left: 50%;
     width: 0%;
-    height: 0%;
-    border-top: 0;
-  }
-  50% {
-    left: 0%;
-    width: 100%;
-    height: 0%;
-    border-top: 0;
+    top: 100%;
+    height: 0;
   }
   100% {
-    left: 0%;
+    border: 2px dashed #1a2352;
+    left: 50%;
+    width: 50%;
+    top: 100%;
+    height: 0;
+  }
+}
+@keyframes drawLine2 {
+  0% {
+    border: 2px dashed #1a2352;
+    top: 100%;
+    left: 100%;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    border: 2px dashed #1a2352;
+    top: 0%;
+    left: 100%;
+    width: 0;
     height: 100%;
+  }
+}
+@keyframes drawLine3 {
+  0% {
+    border: 2px dashed #1a2352;
+    top: 0%;
+    left: 100%;
+    width: 0%;
+    height: 0;
+  }
+  100% {
+    border: 2px dashed #1a2352;
+    top: 0;
+    left: 0%;
     width: 100%;
-    opacity: 1;
+    height: 0;
+  }
+}
+@keyframes drawLine4 {
+  0% {
+    border: 2px dashed #1a2352;
+    top: 0%;
+    left: 0%;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    border: 2px dashed #1a2352;
+    top: 0%;
+    left: -4px;
+    width: 0;
+    height: 100%;
+  }
+}
+@keyframes drawLine5 {
+  0% {
+    border: 2px dashed #1a2352;
+    top: 100%;
+    left: 0%;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    border: 2px dashed #1a2352;
+    top: 100%;
+    left: 0%;
+    width: 50%;
+    height: 0;
+  }
+}
+@keyframes borderSolid {
+  100% {
+    border: 5px solid #1a2352;
   }
 }
 #infogr-wrap-080223 {
@@ -56,32 +121,55 @@
   max-width: 660px;
   height: 100%;
   min-height: 440px;
-  border: 2px solid transparent;
-  border-radius: 18px;
+  border-radius: 0px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 110px;
   padding-top: 0;
-  opacity: 0;
 }
 #infogr-wrap-080223.start {
-  animation: 0.5s ease-out 0s 1 fadeIn;
-  animation-delay: 0.3s;
-  animation-fill-mode: forwards;
-  opacity: 0;
+  position: relative;
+}
+#infogr-wrap-080223.start .anim-line1 {
+  position: absolute;
+  animation: drawLine1 0.5s ease-in-out forwards;
+  animation-delay: 0;
+}
+#infogr-wrap-080223.start .anim-line2 {
+  position: absolute;
+  animation: drawLine2 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+#infogr-wrap-080223.start .anim-line3 {
+  position: absolute;
+  animation: drawLine3 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+#infogr-wrap-080223.start .anim-line4 {
+  position: absolute;
+  animation: drawLine4 0.5s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+#infogr-wrap-080223.start .anim-line5 {
+  position: absolute;
+  animation: drawLine5 0.5s ease-in-out forwards;
+  animation-delay: 2s;
 }
 #infogr-wrap-080223.start:before {
-  opacity: 0;
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0%;
-  height: 0%;
-  border: 2px solid #1a2352;
-  animation: drawBorder 2s ease-in-out forwards;
-  animation-delay: 4s;
+  width: 100%;
+  height: 99.1%;
+  border: 0px solid #1a2352;
+  animation: borderSolid 1s ease-in-out forwards;
+  animation-delay: 3s;
+  top: 0;
+}
+@media (min-width: 1300px) {
+  #infogr-wrap-080223.start:before {
+    height: 98.8%;
+  }
 }
 @media (min-width: 940px) {
   #infogr-wrap-080223 {

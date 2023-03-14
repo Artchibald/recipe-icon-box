@@ -38,29 +38,145 @@ $border-blue: #2393d1;
     }
 }
 
-@keyframes drawBorder {
+@keyframes drawLine1 {
     0% {
+        border: 2px dashed $dark-blue;
         left: 50%;
         width: 0%;
-        height: 0%;
-        border-top: 0;
-    }
-    50% {
-        left: 0%;
-        width: 100%;
-        height: 0%;
-        border-top: 0;
+        top: 100%;
+        height: 0;
     }
     100% {
-        left: 0%;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        // border-color: $dark-blue;
-        // border
+        border: 2px dashed $dark-blue;
+        left: 50%;
+        width: 50%;
+        top: 100%;
+        height: 0;
     }
 }
 
+@keyframes drawLine2 {
+    0% {
+        border: 2px dashed $dark-blue;
+        top: 100%;
+        left: 100%;
+        width: 0;
+        height: 0;
+    }
+    100% {
+        border: 2px dashed $dark-blue;
+        top: 0%;
+        left: 100%;
+        width: 0;
+        height: 100%;
+    }
+}
+
+@keyframes drawLine3 {
+    0% {
+        border: 2px dashed $dark-blue;
+        top: 0%;
+        left: 100%;
+        width: 0%;
+        height: 0;
+    }
+    100% {
+        border: 2px dashed $dark-blue;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 0;
+    }
+}
+
+@keyframes drawLine4 {
+    0% {
+        border: 2px dashed $dark-blue;
+        top: 0%;
+        left: 0%;
+        width: 0;
+        height: 0;
+    }
+    100% {
+        border: 2px dashed $dark-blue;
+        top: 0%;
+        left: -4px;
+        width: 0;
+        height: 100%;
+    }
+}
+
+@keyframes drawLine5 {
+    0% {
+        border: 2px dashed $dark-blue;
+        top: 100%;
+        left: 0%;
+        width: 0;
+        height: 0;
+    }
+    100% {
+        border: 2px dashed $dark-blue;
+        top: 100%;
+        left: 0%;
+        width: 50%;
+        height: 0;
+    }
+}
+
+//solid border
+@keyframes borderSolid {
+    100% {
+        border: 5px solid $dark-blue;
+    }
+}
+
+// @keyframes drawBorder {
+//     0% {
+//         background-color: $dark-blue;
+//         left: 50%;
+//         width: 0%;
+//         height: 2px;
+//         border-top: 0;
+//         border-left: 0;
+//     }
+//     12% {
+//         left: 50%;
+//         width: 50%;
+//         height: 2px;
+//     }
+//     37% {
+//         left: 50%;
+//         height: 100%;
+//         width: 50%;
+//         opacity: 1;
+//         // border-color: $dark-blue;
+//         // border
+//     }
+//     63% {
+//         left: 50%;
+//         height: 100%;
+//         width: 50%;
+//         opacity: 1;
+//         // border-color: $dark-blue;
+//         // border
+//     }
+//     88% {
+//         left: 50%;
+//         height: 100%;
+//         width: 50%;
+//         opacity: 1;
+//         // border-color: $dark-blue;
+//         // border
+//     }
+//     100% {
+//         left: 50%;
+//         height: 100%;
+//         width: 50%;
+//         opacity: 1;
+//         // border-color: $dark-blue;
+//         // border
+//     }
+// }
 #infogr-wrap-080223 {
     margin: 0 auto 200px auto;
     position: relative;
@@ -70,30 +186,58 @@ $border-blue: #2393d1;
     height: 100%;
     min-height: 440px;
     // border: 2px solid $dark-blue;
-    border: 2px solid transparent;
-    border-radius: 18px;
+    // border: 2px solid transparent;
+    border-radius: 0px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: 110px;
     padding-top: 0;
-    opacity: 0;
+    // opacity: 0;
     &.start {
-        animation: 0.5s ease-out 0s 1 fadeIn;
-        animation-delay: 0.3s;
-        animation-fill-mode: forwards;
-        opacity: 0;
+        // animation: 0.5s ease-out 0s 1 fadeIn;
+        // // animation-delay: 0.3s;
+        // animation-fill-mode: forwards;
+        // opacity: 0;
+        position: relative;
+        .anim-line1 {
+            position: absolute;
+            animation: drawLine1 .5s ease-in-out forwards;
+            animation-delay: 0;
+        }
+        .anim-line2 {
+            position: absolute;
+            animation: drawLine2 .5s ease-in-out forwards;
+            animation-delay: .5s;
+        }
+        .anim-line3 {
+            position: absolute;
+            animation: drawLine3 .5s ease-in-out forwards;
+            animation-delay: 1s;
+        }
+        .anim-line4 {
+            position: absolute;
+            animation: drawLine4 .5s ease-in-out forwards;
+            animation-delay: 1.5s;
+        }
+        .anim-line5 {
+            position: absolute;
+            animation: drawLine5 .5s ease-in-out forwards;
+            animation-delay: 2s;
+        }
         &:before {
-            opacity: 0;
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0%;
-            height: 0%;
-            border: 2px solid $dark-blue;
-            animation: drawBorder 2s ease-in-out forwards;
-            animation-delay: 4s;
+            width: 100%;
+            height: 99.1%;
+            border: 0px solid $dark-blue;
+            animation: borderSolid 1s ease-in-out forwards;
+            animation-delay: 3s;
+            top: 0;
+            // top: -5px;
+            @media (min-width: 1300px) {
+                height: 98.8%;
+            }
         }
     }
     @media (min-width: 940px) {
