@@ -14,48 +14,95 @@ $border-blue: #2393d1;
     }
 }
 
+@keyframes moveSvgAroundXs {
+    0% {
+        scale: 1;
+        opacity: 1;
+        left: 50%;
+        top: 91%;
+    }
+    15% {
+        scale: 1;
+        opacity: 1;
+        left: 90%;
+        top: 91%;
+    }
+    40% {
+        scale: 1;
+        opacity: 1;
+        left: 90%;
+        top: -7%;
+    }
+    60% {
+        scale: 1;
+        opacity: 1;
+        left: -16%;
+        top: -7%;
+    }
+    75% {
+        scale: 1;
+        opacity: 1;
+        left: -16%;
+        top: 91%;
+    }
+    99% {
+        scale: 1;
+        opacity: 1;
+        left: 36%;
+        top: 91%;
+    }
+    100% {
+        scale: 1.8;
+        opacity: 1;
+        left: auto;
+        margin: 0 auto;
+        top: 91%;
+    }
+}
+
 @keyframes moveSvgAroundMob {
     0% {
         scale: 1;
         opacity: 1;
         left: 50%;
-        top: 85%;
+        top: 95%;
     }
     15% {
         scale: 1;
         opacity: 1;
-        left: 96.5%;
-        top: 85%;
+        left: 92.4%;
+        top: 95%;
     }
     40% {
         scale: 1;
         opacity: 1;
-        left: 96.5%;
-        top: -12%;
+        left: 92.4%;
+        top: -4%;
     }
     60% {
         scale: 1;
         opacity: 1;
-        left: -4%;
-        top: -12%;
+        left: -8.5%;
+        top: -4%;
     }
     75% {
         scale: 1;
         opacity: 1;
-        left: -4%;
-        top: 85%;
+        left: -8.5%;
+        top: 95%;
     }
     99% {
         scale: 1;
         opacity: 1;
-        left: 45.8%;
-        top: 85%;
+        left: 42.8%;
+        top: 95%;
     }
     100% {
         scale: 1.8;
         opacity: 1;
-        left: 45.8%;
-        top: 85%;
+        left: auto;
+        margin: 0 auto;
+        top: 95%;
     }
 }
 
@@ -69,13 +116,13 @@ $border-blue: #2393d1;
     15% {
         scale: 1;
         opacity: 1;
-        left: 94%;
+        left: 93%;
         top: 92%;
     }
     40% {
         scale: 1;
         opacity: 1;
-        left: 94%;
+        left: 93%;
         top: -8%;
     }
     60% {
@@ -99,7 +146,8 @@ $border-blue: #2393d1;
     100% {
         scale: 1.8;
         opacity: 1;
-        left: 42.7%;
+        left: auto;
+        margin: 0 auto;
         top: 92%;
     }
 }
@@ -170,6 +218,15 @@ $border-blue: #2393d1;
     to {
         stroke-dasharray: 444;
         stroke-dashoffset: 122;
+    }
+}
+
+@keyframes hideBorder {
+    0% {
+        border: 2px dashed $dark-blue;
+    }
+    100% {
+        border: 2px dashed transparent;
     }
 }
 
@@ -328,6 +385,7 @@ $border-blue: #2393d1;
     flex-wrap: wrap;
     padding-bottom: 110px;
     padding-top: 0;
+    // overflow: hidden;
     // opacity: 0;
     &.start {
         // animation: 0.5s ease-out 0s 1 fadeIn;
@@ -337,28 +395,23 @@ $border-blue: #2393d1;
         position: relative;
         .anim-line1 {
             position: absolute;
-            animation: drawLine1 .5s ease-in-out forwards;
-            animation-delay: 0;
+            animation: drawLine1 .5s ease-in-out forwards, hideBorder .1s ease-in-out 3s forwards;
         }
         .anim-line2 {
             position: absolute;
-            animation: drawLine2 .5s ease-in-out forwards;
-            animation-delay: .5s;
+            animation: drawLine2 .5s ease-in-out .5s forwards, hideBorder .1s ease-in-out 3s forwards;
         }
         .anim-line3 {
             position: absolute;
-            animation: drawLine3 .5s ease-in-out forwards;
-            animation-delay: 1s;
+            animation: drawLine3 .5s ease-in-out 1s forwards, hideBorder .1s ease-in-out 3s forwards;
         }
         .anim-line4 {
             position: absolute;
-            animation: drawLine4 .5s ease-in-out forwards;
-            animation-delay: 1.5s;
+            animation: drawLine4 .5s ease-in-out 1.5s forwards, hideBorder .1s ease-in-out 3s forwards;
         }
         .anim-line5 {
             position: absolute;
-            animation: drawLine5 .5s ease-in-out forwards;
-            animation-delay: 2s;
+            animation: drawLine5 .5s ease-in-out 2s forwards, hideBorder .1s ease-in-out 3s forwards;
         }
         &:before {
             content: '';
@@ -374,10 +427,46 @@ $border-blue: #2393d1;
                 height: 98.8%;
             }
         }
+        svg#toggle060223Button7 {
+            // height: 174px;
+            // width: 162px;
+            height: 90px;
+            width: 97px;
+            display: block;
+            margin: 20px auto;
+            position: absolute;
+            bottom: -108px;
+            opacity: 0;
+            z-index: 1;
+            &.start {
+                animation: 2.5s ease-in-out 0s 1 moveSvgAroundXs;
+                animation-delay: 0s;
+                animation-fill-mode: forwards;
+                @media (min-width: 480px) {
+                    animation: 2.5s ease-in-out 0s 1 moveSvgAroundMob;
+                    animation-delay: 0s;
+                    animation-fill-mode: forwards;
+                }
+                @media (min-width: 940px) {
+                    animation: 2.5s ease-in-out 0s 1 moveSvgAroundTablet;
+                    animation-delay: 0s;
+                    animation-fill-mode: forwards;
+                }
+                @media (min-width: 1300px) {
+                    animation: 2.5s ease-in-out 0s 1 moveSvgAround;
+                    animation-delay: 0s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            // &:hover {
+            //     transition: all 0.2s ease-in;
+            //     bottom: -125px;
+            // }
+        }
     }
     @media (min-width: 940px) {
         padding-top: 30px;
-        margin: 20px auto 160px auto;
+        margin: 0px auto 160px auto;
         padding-bottom: 90px;
     }
     @media (min-width: 1300px) {
@@ -694,36 +783,5 @@ $border-blue: #2393d1;
                 opacity: 0.7;
             }
         }
-    }
-    svg#toggle060223Button7 {
-        // height: 174px;
-        // width: 162px;
-        height: 90px;
-        width: 97px;
-        display: block;
-        margin: 20px auto;
-        position: absolute;
-        bottom: -108px;
-        opacity: 0;
-        z-index: 1;
-        &.start {
-            animation: 2.5s ease-out 0s 1 moveSvgAroundMob;
-            animation-delay: 0s;
-            animation-fill-mode: forwards;
-            @media (min-width: 940px) {
-                animation: 2.5s ease-out 0s 1 moveSvgAroundTablet;
-                animation-delay: 0s;
-                animation-fill-mode: forwards;
-            }
-            @media (min-width: 1300px) {
-                animation: 2.5s ease-out 0s 1 moveSvgAroundTablet;
-                animation-delay: 0s;
-                animation-fill-mode: forwards;
-            }
-        }
-        // &:hover {
-        //     transition: all 0.2s ease-in;
-        //     bottom: -125px;
-        // }
     }
 }
