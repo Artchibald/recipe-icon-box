@@ -14,6 +14,141 @@ $border-blue: #2393d1;
     }
 }
 
+@keyframes moveSvgAroundMob {
+    0% {
+        scale: 1;
+        opacity: 1;
+        left: 50%;
+        top: 85%;
+    }
+    15% {
+        scale: 1;
+        opacity: 1;
+        left: 96.5%;
+        top: 85%;
+    }
+    40% {
+        scale: 1;
+        opacity: 1;
+        left: 96.5%;
+        top: -12%;
+    }
+    60% {
+        scale: 1;
+        opacity: 1;
+        left: -4%;
+        top: -12%;
+    }
+    75% {
+        scale: 1;
+        opacity: 1;
+        left: -4%;
+        top: 85%;
+    }
+    99% {
+        scale: 1;
+        opacity: 1;
+        left: 45.8%;
+        top: 85%;
+    }
+    100% {
+        scale: 1.8;
+        opacity: 1;
+        left: 45.8%;
+        top: 85%;
+    }
+}
+
+@keyframes moveSvgAroundTablet {
+    0% {
+        scale: 1;
+        opacity: 1;
+        left: 50%;
+        top: 92%;
+    }
+    15% {
+        scale: 1;
+        opacity: 1;
+        left: 94%;
+        top: 92%;
+    }
+    40% {
+        scale: 1;
+        opacity: 1;
+        left: 94%;
+        top: -8%;
+    }
+    60% {
+        scale: 1;
+        opacity: 1;
+        left: -6.5%;
+        top: -8%;
+    }
+    75% {
+        scale: 1;
+        opacity: 1;
+        left: -6.5%;
+        top: 92%;
+    }
+    99% {
+        scale: 1;
+        opacity: 1;
+        left: 42.7%;
+        top: 92%;
+    }
+    100% {
+        scale: 1.8;
+        opacity: 1;
+        left: 42.7%;
+        top: 92%;
+    }
+}
+
+@keyframes moveSvgAround {
+    0% {
+        scale: 1;
+        opacity: 1;
+        left: 50%;
+        top: 85%;
+    }
+    15% {
+        scale: 1;
+        opacity: 1;
+        left: 96.5%;
+        top: 85%;
+    }
+    40% {
+        scale: 1;
+        opacity: 1;
+        left: 96.5%;
+        top: -12%;
+    }
+    60% {
+        scale: 1;
+        opacity: 1;
+        left: -4%;
+        top: -12%;
+    }
+    75% {
+        scale: 1;
+        opacity: 1;
+        left: -4%;
+        top: 85%;
+    }
+    99% {
+        scale: 1;
+        opacity: 1;
+        left: 45.8%;
+        top: 85%;
+    }
+    100% {
+        scale: 1.8;
+        opacity: 1;
+        left: 45.8%;
+        top: 85%;
+    }
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -230,8 +365,8 @@ $border-blue: #2393d1;
             position: absolute;
             width: 100%;
             height: 99.1%;
-            border: 0px solid $dark-blue;
-            animation: borderSolid 1s ease-in-out forwards;
+            border: 5px solid transparent;
+            animation: borderSolid 1s ease forwards;
             animation-delay: 3s;
             top: 0;
             // top: -5px;
@@ -281,7 +416,7 @@ $border-blue: #2393d1;
         opacity: 0;
         &.start {
             animation: 0.5s ease-out 0s 1 fadeIn;
-            animation-delay: 3.6s;
+            animation-delay: 3s;
             animation-fill-mode: forwards;
         }
     }
@@ -561,8 +696,10 @@ $border-blue: #2393d1;
         }
     }
     svg#toggle060223Button7 {
-        height: 174px;
-        width: 162px;
+        // height: 174px;
+        // width: 162px;
+        height: 90px;
+        width: 97px;
         display: block;
         margin: 20px auto;
         position: absolute;
@@ -570,9 +707,19 @@ $border-blue: #2393d1;
         opacity: 0;
         z-index: 1;
         &.start {
-            animation: 0.3s ease-out 0s 1 slideInFromTop;
-            animation-delay: 4s;
+            animation: 2.5s ease-out 0s 1 moveSvgAroundMob;
+            animation-delay: 0s;
             animation-fill-mode: forwards;
+            @media (min-width: 940px) {
+                animation: 2.5s ease-out 0s 1 moveSvgAroundTablet;
+                animation-delay: 0s;
+                animation-fill-mode: forwards;
+            }
+            @media (min-width: 1300px) {
+                animation: 2.5s ease-out 0s 1 moveSvgAroundTablet;
+                animation-delay: 0s;
+                animation-fill-mode: forwards;
+            }
         }
         // &:hover {
         //     transition: all 0.2s ease-in;
