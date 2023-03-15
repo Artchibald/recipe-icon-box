@@ -153,25 +153,25 @@
   15% {
     scale: 1;
     opacity: 1;
-    left: 96.5%;
+    left: -4%;
     top: 85%;
   }
   40% {
     scale: 1;
     opacity: 1;
-    left: 96.5%;
+    left: -4%;
     top: -12%;
   }
   60% {
     scale: 1;
     opacity: 1;
-    left: -4%;
+    left: 96.4%;
     top: -12%;
   }
   75% {
     scale: 1;
     opacity: 1;
-    left: -4%;
+    left: 96.4%;
     top: 85%;
   }
   99% {
@@ -209,22 +209,22 @@
 }
 @keyframes hideBorder {
   0% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
   }
   100% {
-    border: 2px dashed transparent;
+    border: 1px dashed transparent;
   }
 }
 @keyframes drawLine1 {
   0% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     left: 50%;
     width: 0%;
     top: 100%;
     height: 0;
   }
   100% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     left: 50%;
     width: 50%;
     top: 100%;
@@ -233,14 +233,14 @@
 }
 @keyframes drawLine2 {
   0% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     top: 100%;
     left: 100%;
     width: 0;
     height: 0;
   }
   100% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     top: 0%;
     left: 100%;
     width: 0;
@@ -249,14 +249,14 @@
 }
 @keyframes drawLine3 {
   0% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     top: 0%;
     left: 100%;
     width: 0%;
     height: 0;
   }
   100% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     top: 0;
     left: 0%;
     width: 100%;
@@ -265,14 +265,14 @@
 }
 @keyframes drawLine4 {
   0% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     top: 0%;
     left: 0%;
     width: 0;
     height: 0;
   }
   100% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     top: 0%;
     left: -4px;
     width: 0;
@@ -281,14 +281,14 @@
 }
 @keyframes drawLine5 {
   0% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     top: 100%;
     left: 0%;
     width: 0;
     height: 0;
   }
   100% {
-    border: 2px dashed #1a2352;
+    border: 1px dashed #1a2352;
     top: 100%;
     left: 0%;
     width: 50%;
@@ -297,7 +297,7 @@
 }
 @keyframes borderSolid {
   100% {
-    border: 5px solid #1a2352;
+    border: 2px solid #1a2352;
   }
 }
 #infogr-wrap-080223 {
@@ -308,7 +308,6 @@
   max-width: 660px;
   height: 100%;
   min-height: 440px;
-  border-radius: 0px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -320,32 +319,33 @@
 }
 #infogr-wrap-080223.start .anim-line1 {
   position: absolute;
-  animation: drawLine1 0.5s ease-in-out forwards, hideBorder 0.1s ease-in-out 3s forwards;
+  animation: drawLine1 1s ease-in-out forwards, hideBorder 0.1s ease-in-out 6s forwards;
 }
 #infogr-wrap-080223.start .anim-line2 {
   position: absolute;
-  animation: drawLine2 0.5s ease-in-out 0.5s forwards, hideBorder 0.1s ease-in-out 3s forwards;
+  animation: drawLine2 1s ease-in-out 1s forwards, hideBorder 0.1s ease-in-out 6s forwards;
 }
 #infogr-wrap-080223.start .anim-line3 {
   position: absolute;
-  animation: drawLine3 0.5s ease-in-out 1s forwards, hideBorder 0.1s ease-in-out 3s forwards;
+  animation: drawLine3 1s ease-in-out 2s forwards, hideBorder 0.1s ease-in-out 6s forwards;
 }
 #infogr-wrap-080223.start .anim-line4 {
   position: absolute;
-  animation: drawLine4 0.5s ease-in-out 1.5s forwards, hideBorder 0.1s ease-in-out 3s forwards;
+  animation: drawLine4 1s ease-in-out 3s forwards, hideBorder 0.1s ease-in-out 6s forwards;
 }
 #infogr-wrap-080223.start .anim-line5 {
   position: absolute;
-  animation: drawLine5 0.5s ease-in-out 2s forwards, hideBorder 0.1s ease-in-out 3s forwards;
+  animation: drawLine5 1s ease-in-out 4s forwards, hideBorder 0.1s ease-in-out 6s forwards;
 }
 #infogr-wrap-080223.start:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 99.1%;
-  border: 5px solid transparent;
+  border: 2px solid transparent;
+  border-radius: 16px;
   animation: borderSolid 1s ease forwards;
-  animation-delay: 3s;
+  animation-delay: 6s;
   top: 0;
 }
 @media (min-width: 1300px) {
@@ -364,27 +364,27 @@
   z-index: 1;
 }
 #infogr-wrap-080223.start svg#toggle060223Button7.start {
-  animation: 2.5s ease-in-out 0s 1 moveSvgAroundXs;
+  animation: 5s ease-in-out 0s 1 moveSvgAroundXs;
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 @media (min-width: 480px) {
   #infogr-wrap-080223.start svg#toggle060223Button7.start {
-    animation: 2.5s ease-in-out 0s 1 moveSvgAroundMob;
+    animation: 5s ease-in-out 0s 1 moveSvgAroundMob;
     animation-delay: 0s;
     animation-fill-mode: forwards;
   }
 }
 @media (min-width: 940px) {
   #infogr-wrap-080223.start svg#toggle060223Button7.start {
-    animation: 2.5s ease-in-out 0s 1 moveSvgAroundTablet;
+    animation: 5s ease-in-out 0s 1 moveSvgAroundTablet;
     animation-delay: 0s;
     animation-fill-mode: forwards;
   }
 }
 @media (min-width: 1300px) {
   #infogr-wrap-080223.start svg#toggle060223Button7.start {
-    animation: 2.5s ease-in-out 0s 1 moveSvgAround;
+    animation: 5s ease-in-out 0s 1 moveSvgAround;
     animation-delay: 0s;
     animation-fill-mode: forwards;
   }
