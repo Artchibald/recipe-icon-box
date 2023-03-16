@@ -301,7 +301,7 @@
   }
 }
 @keyframes finalSvgAnim {
-  100% {
+  0% {
     opacity: 0;
   }
   100% {
@@ -398,19 +398,9 @@
   }
 }
 #infogr-wrap-080223.start .final-svg {
-  position: absolute;
-  display: block;
-  margin: 0 auto;
-  width: 110px;
-  height: 110px;
-  bottom: -49px;
+  animation: finalSvgAnim 0.3s ease-in-out 8.5s forwards;
   opacity: 0;
   z-index: 1;
-}
-#infogr-wrap-080223.start .final-svg.start {
-  animation: 0.3s ease-in-out 0s 1 finalSvgAnim;
-  animation-delay: 8.5s;
-  animation-fill-mode: forwards;
 }
 @media (min-width: 940px) {
   #infogr-wrap-080223 {
